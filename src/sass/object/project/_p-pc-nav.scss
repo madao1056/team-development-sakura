@@ -1,0 +1,91 @@
+@use "global"as *;
+
+.p-pc-nav {
+	height: inherit;
+}
+
+.p-pc-nav__items {
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.p-pc-nav__item {
+	height: inherit;
+	margin-left: rem(30);
+}
+
+.p-pc-nav__item a {
+	position: relative;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-pc-nav__item:not(:last-child) a::after {
+	content: "";
+	position: absolute;
+	bottom: rem(9);
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: $underline-yellow;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: transform 0.3s;
+	opacity: 0;
+}
+
+.p-pc-nav__item:not(:last-child) a:hover::after {
+	transform: scale(1, 1);
+	opacity: 1;
+}
+
+.p-pc-nav__item:not(:last-child).current a::after {
+	transform: scale(1, 1);
+	opacity: 1;
+}
+
+.p-pc-nav__item:last-child {
+	background-color: $white;
+	width: rem(170);
+	height: rem(50);
+}
+
+.p-pc-nav__item:last-child a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $text;
+	line-height: 1;
+	letter-spacing: 0.125em;
+	width: inherit;
+	height: inherit;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease 0s;
+	z-index: 1;
+	opacity: 1;
+}
+
+.p-pc-nav__item:last-child a:hover {
+	color: $white;
+}
+
+.p-pc-nav__item:last-child a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background-color: $text;
+	transition: 0.3s;
+	z-index: -1;
+}
+
+.p-pc-nav__item:last-child a:hover::before {
+	left: 0;
+}

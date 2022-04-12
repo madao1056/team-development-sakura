@@ -1,0 +1,22 @@
+@use "global" as *;
+.c-detail-title02 {
+    position: relative;
+    font-size: rem(20);
+    letter-spacing: 0.12em;
+    font-weight: 300;
+    margin-top: rem(25);
+    margin-left: rem(9);
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+}
+
+.c-detail-title02::before {
+    position: absolute;
+    top: 0;
+    left: rem(-9);
+    content: "";
+    width: rem(3);
+    height: rem(29);
+    background-color: #c4c4c4;
+}

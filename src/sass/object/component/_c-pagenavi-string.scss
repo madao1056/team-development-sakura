@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.c-pagenavi-string {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: rem(80);
+
+	@include mq(md) {
+		margin-top: rem(104);
+	}
+}
+
+.c-pagenavi-string a {
+	display: inline-block;
+	width: rem(71);
+	color: $white;
+	background-color: $black;
+	border: 1px solid $white;
+	line-height: 1;
+	padding: rem(3) rem(18.5);
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.c-pagenavi-string a:hover {
+	color: $black;
+	background-color: $white;
+}
+
+.c-pagenavi-string__prev a,
+.c-pagenavi-string__next a {
+	padding: rem(3) rem(14);
+}
+
+.c-pagenavi-string__list a {
+	margin-left: rem(48);
+	margin-right: rem(48);
+}

@@ -1,0 +1,78 @@
+@use "global" as *;
+.p-section-header {
+    width: 100%;
+    height: rem(425);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq(md) {
+        height: rem(370);
+    }
+}
+
+.p-section-header__title {
+    font-size: rem(28);
+    letter-spacing: 0.14em;
+    @include mq(md) {
+        font-size: rem(35);
+    }
+}
+
+.p-section-header--news {
+    background-image: url(./images/news/news-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/news/news-mv-pc.jpg);
+    }
+}
+
+.p-section-header--content {
+    background-image: url(./images/content/content-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/content/content-mv-pc.jpg);
+    }
+}
+
+.p-section-header--works {
+    background-image: url(./images/works/works-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/works/works-mv-pc.jpg);
+    }
+}
+
+.p-section-header--works::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #111111, $alpha: 0.2);
+    position: absolute;
+}
+
+.p-section-header--company {
+    background-image: url(./images/company/company-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/company/company-mv-pc.jpg);
+    }
+}
+
+.p-section-header--blog {
+    background-image: url(./images/blog/blog-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/blog/blog-mv-pc.jpg);
+    }
+}
+
+.p-section-header--contact {
+    background-image: url(./images/contact/contact-mv-sp.jpg);
+    @include mq(md) {
+        background-image: url(./images/contact/contact-mv-pc.jpg);
+    }
+}
+
+.p-section-header__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
