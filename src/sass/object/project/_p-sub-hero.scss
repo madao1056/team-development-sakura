@@ -1,5 +1,5 @@
 @use "global" as *;
-.p-section-header {
+.p-sub-hero {
     width: 100%;
     height: rem(425);
     position: relative;
@@ -11,7 +11,7 @@
     }
 }
 
-.p-section-header__title {
+.p-sub-hero__title {
     font-size: rem(28);
     letter-spacing: 0.14em;
     @include mq(md) {
@@ -19,28 +19,28 @@
     }
 }
 
-.p-section-header--news {
+.p-sub-hero--news {
     background-image: url(./images/news/news-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/news/news-mv-pc.jpg);
     }
 }
 
-.p-section-header--content {
+.p-sub-hero--content {
     background-image: url(./images/content/content-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/content/content-mv-pc.jpg);
     }
 }
 
-.p-section-header--works {
+.p-sub-hero--works {
     background-image: url(./images/works/works-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/works/works-mv-pc.jpg);
     }
 }
 
-.p-section-header--works::after {
+.p-sub-hero--works::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -48,28 +48,28 @@
     position: absolute;
 }
 
-.p-section-header--company {
+.p-sub-hero--company {
     background-image: url(./images/company/company-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/company/company-mv-pc.jpg);
     }
 }
 
-.p-section-header--blog {
+.p-sub-hero--blog {
     background-image: url(./images/blog/blog-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/blog/blog-mv-pc.jpg);
     }
 }
 
-.p-section-header--contact {
+.p-sub-hero--contact {
     background-image: url(./images/contact/contact-mv-sp.jpg);
     @include mq(md) {
         background-image: url(./images/contact/contact-mv-pc.jpg);
     }
 }
 
-.p-section-header__box {
+.p-sub-hero__box {
     position: absolute;
     top: 50%;
     left: 50%;
