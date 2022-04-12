@@ -1,0 +1,42 @@
+@use "global"as *;
+
+.p-common-contact {
+	background-color: $text;
+}
+
+.p-common-contact__inner {
+	padding-top: rem(30);
+	padding-bottom: rem(64);
+
+	@include mq(md) {
+		padding-top: rem(128);
+		padding-bottom: rem(149);
+	}
+}
+
+.p-common-contact__header .c-title__en {
+	@include mq(md) {
+		bottom: 0;
+		top: auto;
+	}
+}
+
+.p-common-contact__text {
+	margin-top: rem(16);
+	letter-spacing: 0.125em;
+	line-height: 1.4;
+
+	@include mq(md) {
+		margin-top: rem(23);
+		text-align: center;
+	}
+}
+
+.p-common-contact__btn {
+	text-align: center;
+	margin-top: rem(49);
+
+	@include mq(md) {
+		margin-top: rem(61);
+	}
+}

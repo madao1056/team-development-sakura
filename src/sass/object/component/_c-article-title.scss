@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-article-title{
+	font-size: rem(16);
+	font-weight: $normal;
+	line-height: 1;
+	color: $white;
+	background-color: $black;
+	padding: rem(12) 0;
+	text-align: center;
+	border: 1px solid $white;
+
+	@include mq(md) {
+		background-color: $text;
+	}
+}

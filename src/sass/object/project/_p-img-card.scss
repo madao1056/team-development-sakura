@@ -1,0 +1,29 @@
+@use "global" as *;
+.p-img-card__box {
+    position: relative;
+    display: block;
+}
+
+.p-img-card__category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: rem(8) rem(19) rem(9);
+    background-color: #111;
+    letter-spacing: 0.12em;
+}
+
+.p-img-card__content {
+    margin-top: rem(27);
+    @include mq(md) {
+        margin-top: rem(15);
+    }
+}
+
+.p-img-card__title {
+    font-size: rem(20);
+    letter-spacing: 0.12em;
+    text-align: center;
+    position: relative;
+    line-height: 1.53;
+}

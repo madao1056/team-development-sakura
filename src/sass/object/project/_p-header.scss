@@ -1,0 +1,28 @@
+@use "global"as *;
+
+.p-header__inner {
+	position: fixed;
+	top: 0;
+	height: rem(50);
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 rem(22);
+	background-color: rgba(0, 0, 0, 0.5);
+
+	@include mq(md) {
+		padding: 0 rem(32);
+	}
+}
+
+//ヘッダーカラー変更
+.p-header__inner--color {
+	background-color: $black;
+}
+
+.p-header__logo {
+	position: relative;
+	z-index: 99;
+}

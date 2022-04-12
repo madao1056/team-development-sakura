@@ -1,0 +1,24 @@
+@use "global" as *;
+.c-detail-title03 {
+    position: relative;
+    font-size: rem(18);
+    letter-spacing: 0.12em;
+    font-weight: 300;
+    margin-top: rem(23);
+    margin-left: rem(9);
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+}
+
+.c-detail-title03::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-35%);
+    content: "";
+    width: 100%;
+    height: rem(3);
+    background: linear-gradient(to right, #ffea2e, #ffea2e 34%, #fff 34%, #fff);
+}

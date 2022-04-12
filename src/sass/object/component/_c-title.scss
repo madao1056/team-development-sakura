@@ -1,0 +1,49 @@
+@use "global"as *;
+
+.c-title {
+	position: relative;
+	text-align: center;
+}
+
+.c-title__ja {
+	font-size: rem(20);
+	font-weight: $normal;
+	color: $white;
+	line-height: 1.45;
+	letter-spacing: 0.125em;
+	padding-top: rem(34);
+
+	@include mq(md) {
+		font-size: rem(30);
+		letter-spacing: 0.08em;
+		padding-top: rem(21);
+	}
+}
+
+.c-title__en {
+	font-size: rem(50);
+	font-family: $second-font-family;
+	line-height: 1;
+	letter-spacing: 0.025em;
+	text-transform: capitalize;
+	color: $accent-yellow;
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+
+	@include mq(md) {
+		left: 0;
+		transform: none;
+		font-size: rem(110);
+		letter-spacing: 0.018em;
+	}
+}
+
+.c-title__en.c-title__en--right {
+	@include mq(md) {
+		right: 0;
+		left: initial;
+	}
+}

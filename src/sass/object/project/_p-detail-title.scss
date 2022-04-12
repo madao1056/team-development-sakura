@@ -1,0 +1,36 @@
+@use "global" as *;
+.p-detail-title {
+    max-width: rem(800);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.p-detail-title__title {
+    font-size: rem(20);
+    letter-spacing: 0.02em;
+    line-height: 1.75;
+    font-weight: 300;
+    @include mq(md) {
+        font-size: rem(23);
+    }
+}
+
+.p-detail-title__box {
+    margin-top: rem(14);
+    display: flex;
+    align-items: center;
+    @include mq(md) {
+        margin-top: rem(29);
+    }
+}
+
+.p-detail-title__date {
+    margin-right: rem(30);
+    letter-spacing: 0.04em;
+}
+
+.p-detail-title__category {
+    border: 1px solid #fff;
+    padding: rem(7) rem(18);
+    letter-spacing: 0.12em;
+}

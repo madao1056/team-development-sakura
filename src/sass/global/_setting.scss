@@ -17,8 +17,11 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: "Noto Sans JP",
+sans-serif;
+$second-font-family: "Noto Serif JP",
+serif;
+
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -37,15 +40,18 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-
+$text: #333;
+$btn:#333;
+$category-yellow: #ffea2e;
+$underline-yellow: #ffea2e;
+$accent-yellow: #f9f871;
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
 ////////////////////
 
 //ブレイクポイント
-$breakpoints: (
-  sm: 600,
+$breakpoints: (sm: 600,
   md: 768,
   lg: 1024,
   xl: 1440,
@@ -53,8 +59,7 @@ $breakpoints: (
 
 
 //メディアクエリー
-$mediaquerys: (
-  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+$mediaquerys: (sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
   md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
@@ -80,6 +85,7 @@ $mediaquerys: (
 //768px以上を表示
 .u-desktop {
   display: none;
+
   @include mq("md") {
     display: block;
   }
