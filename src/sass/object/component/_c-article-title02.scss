@@ -1,5 +1,5 @@
 @use "global" as *;
-.c-detail-title02 {
+.c-article-title02 {
     position: relative;
     font-size: rem(20);
     letter-spacing: 0.12em;
@@ -11,7 +11,7 @@
     }
 }
 
-.c-detail-title02::before {
+.c-article-title02::before {
     position: absolute;
     top: 0;
     left: rem(-9);
