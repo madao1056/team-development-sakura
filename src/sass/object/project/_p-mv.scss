@@ -1,0 +1,76 @@
+@use "global" as *;
+.p-mv__block {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-mv__wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes zoomUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+//ズームさせる部分だけswiperのclass名でないと10秒後に止まる
+.swiper-slide-active .p-mv__img,
+.swiper-slide-duplicate-active .p-mv__img,
+.swiper-slide-prev .p-mv__img {
+    animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.p-mv__img {
+    max-width: 100vw;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.p-mv__img img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.p-mv__title-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: rem(342);
+    width: 100%;
+    z-index: 1;
+    @include mq(md) {
+        max-width: rem(610);
+        letter-spacing: 0.03em;
+    }
+}
+
+.p-mv__title-main {
+    font-size: rem(28);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.p-mv__title-sub {
+    font-size: rem(20);
+    margin-top: rem(13);
+    @include mq(md) {
+        font-size: rem(25);
+        margin-top: rem(5);
+    }
+}
