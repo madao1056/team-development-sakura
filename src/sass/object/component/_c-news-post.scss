@@ -79,11 +79,19 @@
 }
 
 .c-news-post__text--top {
-	text-decoration: underline $white;
+	text-decoration: underline $black;
 }
 
 .c-news-post__text--page {
 	@include mq(md) {
 		margin-right: 0;
 	}
+}
+
+.c-news-post__link:hover .c-news-post__text--top {
+	text-decoration: underline $white;
+}
+
+.c-news-post__link:hover .c-news-post__text--page {
+	color: $underline-yellow;
 }
