@@ -1,3 +1,8 @@
-<a href="<%= link %>" class="c-btn">
-    <%= text %>
-</a>
+<%# blackの場合は背景が黒、文字色が白 %>
+<% if( backColor == 'black' ) { %>
+<a href="<%= link %>" class="c-btn"><%= text %></a>
+<%# whiteの場合は背景が白、文字色が黒 %>
+<% } else if(backColor == 'white') { %>
+<a href="<%= link %>" class="c-btn c-btn--white"><%= text %></a>
+<% } %>
+
