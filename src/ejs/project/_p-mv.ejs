@@ -1,21 +1,15 @@
 <div class="p-mv__block">
     <div class="p-mv__container js-swiper1">
         <div class="p-mv__wrapper swiper-wrapper">
-
-
             <%  let urlTop = "./images/top/mv0" %>
-                <%#  空白削除 %>
-                    <%  urlTop = urlTop.replace(/\s+/g, ""); %>
-                        <%  let urlBottom = ".jpg" %>
-                            <%#  空白削除 %>
-                                <%  urlBottom = urlBottom.replace(/\s+/g, ""); %>
-                                    <% for (let i = 1; i < 4; i++) { %>
-                                        <div class="p-mv__slide swiper-slide">
-                                            <div class="p-mv__img">
-                                                <img src="<%= urlTop + i + urlBottom%>" alt="メインビュー0<%= i %>" />
-                                            </div>
-                                        </div>
-                                        <% } %>
+                <%  let urlBottom = ".jpg" %>
+                    <% for (let i = 1; i < 4; i++) { %>
+                        <div class="p-mv__slide swiper-slide">
+                            <div class="p-mv__img">
+                                <img src="<%= urlTop + i + urlBottom%>" alt="メインビュー0<%= i %>" />
+                            </div>
+                        </div>
+                        <% } %>
 
         </div>
     </div>
