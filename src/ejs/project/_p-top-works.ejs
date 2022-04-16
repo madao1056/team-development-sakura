@@ -1,0 +1,29 @@
+<%- include('../component/_c-title',{japanese_title:'制作実績', english_title:'works'}) %>
+    <div class="p-top-works__group">
+        <div class="p-top-works__block">
+            <ul class="p-top-works__box slider">
+
+                <%  let urlTopWoks = "./images/works/works-top0" %>
+                    <%  let urlBottomWoks = ".jpg" %>
+                        <% for (let i = 1; i < 4; i++) { %>
+                            <li class="p-top-works__img">
+                                <img src="<%= urlTopWoks + i + urlBottomWoks%>" alt="works-image0<% i %>" title="works-image0<% i %>" />
+                            </li>
+
+                            <% } %>
+            </ul>
+        </div>
+        <div class="p-top-works__contents">
+            <div class="p-top-works__wrapper">
+                <div class="p-top-works__header section-title section-title--left">
+                    <div class="section-title__sub">メインタイトルが入ります</div>
+                </div>
+                <div class="p-top-works__body">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </div>
+                <div class="p-top-works__btn">
+                    <%- include('../component/_c-btn',{link:'./works.html', text:'詳しく見る'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
