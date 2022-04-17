@@ -1,0 +1,36 @@
+@use "global"as *;
+
+.p-cards {
+	@include mq(md) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.p-cards__item {
+	@include mq(md) {
+		width: 100%;
+		max-width: calc((100% - #{rem(25)} * 2) / 3);
+	}
+}
+
+.p-cards__item+.p-cards__item {
+	margin-top: rem(24);
+
+	@include mq(md) {
+		margin-top: 0;
+		margin-left: rem(25);
+	}
+}
+
+.p-cards__item:nth-of-type(3n + 1) {
+	@include mq(md) {
+		margin-left: 0;
+	}
+}
+
+.p-cards__item:nth-of-type(n + 4) {
+	@include mq(md) {
+		margin-top: rem(25);
+	}
+}
