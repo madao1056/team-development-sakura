@@ -1,11 +1,11 @@
-jQuery(function($) {
+jQuery(function ($) {
     // この中であればWordpressでも「$」が使用可能になる
 
     var topBtn = $(".page-top");
     topBtn.hide();
 
     // ボタンの表示設定
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 70) {
             // 指定px以上のスクロールでボタンを表示
             topBtn.fadeIn();
@@ -16,7 +16,7 @@ jQuery(function($) {
     });
 
     // ボタンをクリックしたらスクロールして上に戻る
-    topBtn.click(function() {
+    topBtn.click(function () {
         $("body,html").animate({
                 scrollTop: 0,
             },
@@ -27,7 +27,7 @@ jQuery(function($) {
     });
 
     // ヘッダー
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         if ($(".slider1").height() < $(this).scrollTop()) {
             $(".header").css("background", "rgba(17,17,17,1)");
         } else {
@@ -36,34 +36,37 @@ jQuery(function($) {
     });
 
     // //ドロワーメニュー
-    // $('.navbar_toggle').on('click', function () {
-    //   $(this).toggleClass('open');
-    //   $('.menu').toggleClass('open');
-    // });
-
-    //ナビバートグル
-    $(".js-hamburger").on("click", function() {
-        if ($(".js-hamburger").hasClass("is-open")) {
-            $(this).toggleClass("is-open");
-            $(".js-drawer-menu").fadeOut();
-            $(".js-overlay").fadeOut();
-            $("body").removeClass("noscroll");
-        } else {
-            $(this).toggleClass("is-open");
-            $(".js-drawer-menu").fadeIn();
-            $(".js-overlay").fadeIn();
-            $("body").toggleClass("noscroll");
-        }
+    $('.js-hamburger').on('click', function () {
+        $('.c-hamburger').toggleClass('is-open');
+        $('.p-sp-nav').toggleClass('is-open');
+        $("html").toggleClass("is-fixed");
     });
 
+    //ナビバートグル
+    // $(".js-hamburger").on("click", function() {
+    //     if ($(".js-hamburger").hasClass("is-open")) {
+    //         $(this).toggleClass("is-open");
+    //         $(".js-drawer-menu").fadeOut();
+    //         $(".js-overlay").fadeOut();
+    //         $("body").removeClass("noscroll");
+    //     } else {
+    //         $(this).toggleClass("is-open");
+    //         $(".js-drawer-menu").fadeIn();
+    //         $(".js-overlay").fadeIn();
+    //         $("body").toggleClass("noscroll");
+    //     }
+    // });
+
     // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-    $(document).on("click", 'a[href*="#"]', function() {
+    $(document).on("click", 'a[href*="#"]', function () {
         let time = 400;
         let header = $("header").innerHeight();
         let target = $(this.hash);
         if (!target.length) return;
         let targetY = target.offset().top - header;
-        $("html,body").animate({ scrollTop: targetY }, time, "swing");
+        $("html,body").animate({
+            scrollTop: targetY
+        }, time, "swing");
         return false;
     });
 });

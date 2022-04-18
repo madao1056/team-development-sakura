@@ -3,9 +3,13 @@
     <h1 class="p-header__logo">
       <a href="./"> <%- include ('../component/_c-logo') %> </a>
     </h1>
-    <%- include ('../project/_p-pc-nav') %>
+    <div class="p-header__nav-pc u-desktop">
+      <%- include ('../project/_p-pc-nav') %>
+    </div>
     <!-- /.p-header__nav-pc -->
-    <%- include ('../project/_p-sp-nav') %>
+    <div class="p-header__nav-sp u-mobile">
+      <%- include ('../project/_p-sp-nav') %>
+    </div>
     <!-- /.p-header__nav-sp -->
     <%- include ('../component/_c-hamburger') %>
   </div>

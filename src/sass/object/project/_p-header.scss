@@ -13,7 +13,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 
 	@include mq(md) {
-		padding: 0 rem(32);
+		padding: 0;
 	}
 }
 
@@ -25,4 +25,9 @@
 .p-header__logo {
 	position: relative;
 	z-index: 99;
+
+	@include mq(md) {
+		margin-left: rem(33);
+		margin-top: rem(8);
+	}
 }
