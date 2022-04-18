@@ -16,6 +16,10 @@ html {
         font-size: 16px;
     }
 }
+//メニューオープン時スクロールしない
+html.is-fixed {
+    overflow: hidden;
+}
 
 //背景を黒・文字色を白に変更
 body {
