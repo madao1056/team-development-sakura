@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
 
-
-    <body>
-
-        <%- include('./project/_p-mv') %>
-            <%- include('./project/_p-top-content') %>
-                <% for (let i = 1; i < 10; i++) { %>
-                    <p>このループは
-                        <%= "Hello! EJS!" + i++ %>回目です。</p>
-                    <% } %>
-
-                        <%- include('./project/_p-top-works') %>
-    </body>
-
+  <body>
+    <%- include('./project/_p-mv') %> <%- include('./project/_p-top-content') %>
+    <%- include('./project/_p-top-works') %> <%-
+    include('./project/_p-top-overview') %>
+  </body>
 </html>

@@ -1,26 +1,28 @@
-<%- include('../component/_c-title',{japanese_title:'事業内容', english_title:'content'}) %>
-    <div class="p-top-content__grid">
-
-        <% let urlTopContent = "./images/content/top-content0"; %>
-            <% let urlBottomContent = ".jpg";%>
-                <% let contentTitle = [ 
-                        "経営理念ページへ",
-                        "理念1へ",
-                        "理念2へ",
-                        "理念3へ"
-                        ];%>
-                    <% for (var i = 0; i < contentTitle.length; i++) { %>
-                        <div class="p-top-content__box">
-                            <a class="p-top-content__link" href="./content.html" title="<%= contentTitle[i]%>">
-                                <div class="p-top-content__img">
-                                    <img src="<%= urlTopContent + (i+1) + urlBottomContent%>" alt="<%= contentTitle[i]%>" title="<%= contentTitle[i]%>" />
-                                    <div class="p-top-content__text">
-                                        <p>
-                                            <%= contentTitle[i]%>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <% } %>
-    </div>
+<%# LorRで英字がどちらにくるか（Left or Right）選択できる%> <% var position = {
+LorR: 'L' } %> <%- include('../component/_c-title',{japanese_title:'事業内容',
+english_title:'content',enTitle: position}) %>
+<div class="p-top-content__grid">
+  <% let urlTopContent = "./images/content/top-content0"; %> <% let
+  urlBottomContent = ".jpg";%> <% let contentTitle = [ "経営理念ページへ",
+  "理念1へ", "理念2へ", "理念3へ" ];%> <% for (var i = 0; i <
+  contentTitle.length; i++) { %>
+  <div class="p-top-content__box">
+    <a
+      class="p-top-content__link"
+      href="./content.html"
+      title="<%= contentTitle[i]%>"
+    >
+      <div class="p-top-content__img">
+        <img
+          src="<%= urlTopContent + (i+1) + urlBottomContent%>"
+          alt="<%= contentTitle[i]%>"
+          title="<%= contentTitle[i]%>"
+        />
+        <div class="p-top-content__text">
+          <p><%= contentTitle[i]%></p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <% } %>
+</div>

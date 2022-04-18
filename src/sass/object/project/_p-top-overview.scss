@@ -1,5 +1,6 @@
 @use "global" as *;
-.p-top-works__group {
+
+.p-top-overview__group {
   margin-top: rem(48);
   margin-left: auto;
   margin-right: auto;
@@ -12,11 +13,17 @@
   }
 }
 
-.p-top-works__block {
+.p-top-overview__group {
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.p-top-overview__block {
   z-index: 1;
 }
 
-.p-top-works__box {
+.p-top-overview__box {
   vertical-align: bottom;
   max-width: rem(557);
   @include mq(md) {
@@ -28,45 +35,14 @@
   }
 }
 
-.p-top-works__img {
-  max-width: rem(557);
-  width: 100%;
-  vertical-align: bottom;
-  position: relative;
-  z-index: 1;
-}
-
-.p-top-works__img::before {
-  content: "";
-  display: block;
-  padding-top: 69.6%; //(261/375)
+.p-top-overview__box {
   @include mq(md) {
-    padding-top: 69.83842010771%; //(389/557)
+    margin-left: rem(-263);
+    margin-right: rem(90);
   }
 }
 
-.p-top-works__img::after {
-  position: absolute;
-  content: "";
-  background: rgba($color: #000000, $alpha: 0.2);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.p-top-works__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-.p-top-works__wrapper {
+.p-top-overview__wrapper {
   padding: rem(24) rem(20) rem(21) rem(20);
   background-color: #333;
   z-index: -1;
@@ -78,7 +54,13 @@
   }
 }
 
-.p-top-works__header {
+.p-top-overview__wrapper {
+  @include mq(md) {
+    padding: rem(110) rem(295) rem(118) rem(91);
+  }
+}
+
+.p-top-overview__header {
   font-size: rem(20);
   letter-spacing: rem(2);
   text-align: center;
@@ -88,7 +70,13 @@
   }
 }
 
-.p-top-works__title {
+.p-top-overview__header {
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.p-top-overview__title {
   font-size: rem(20);
   letter-spacing: 0.1em;
   @include mq(md) {
@@ -97,7 +85,7 @@
   }
 }
 
-.p-top-works__body {
+.p-top-overview__body {
   margin-top: rem(22);
   letter-spacing: 0.13em;
   line-height: 1.45;
@@ -108,11 +96,10 @@
   }
 }
 
-.p-top-works__btn {
+.p-top-overview__btn {
   margin-top: rem(26);
-  text-align: center;
   @include mq(md) {
-    text-align: initial;
     margin-top: rem(48);
+    margin-left: 0;
   }
 }
