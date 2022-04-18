@@ -1,26 +1,28 @@
 <% var position = { LorR: 'L' } %> <%-
-include('../component/_c-title',{japanese_title:'企業概要',english_title:'overview',enTitle:
+include('../component/_c-title',{japaneseTitle:'企業概要',englishTitle:'overview',enTitle:
 position}) %>
-<div class="p-top-overview__group">
-  <div class="p-top-overview__block">
-    <div class="p-top-overview__box">
-      <img src="./images/top/overview.jpg" alt="企業概要" title="企業概要" />
+<div class="p-top-overview">
+  <div class="p-top-overview__group">
+    <div class="p-top-overview__block">
+      <div class="p-top-overview__box">
+        <img src="./images/top/overview.jpg" alt="企業概要" title="企業概要" />
+      </div>
     </div>
-  </div>
-  <div class="p-top-overview__contents">
-    <div class="p-top-overview__wrapper">
-      <div class="p-top-overview__header">
-        <div class="p-top-overview__title">メインタイトルが入ります</div>
-      </div>
-      <div class="p-top-overview__body">
-        <p class="p-top-overview__copy">
-          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        </p>
-      </div>
-      <div class="p-top-overview__btn btn">
-        <%-
-        include('../component/_c-btn',{link:'./works.html',text:'詳しく見る'})
-        %>
+    <div class="p-top-overview__contents">
+      <div class="p-top-overview__wrapper">
+        <div class="p-top-overview__header">
+          <div class="p-top-overview__title">メインタイトルが入ります</div>
+        </div>
+        <div class="p-top-overview__body">
+          <p class="p-top-overview__copy">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+        </div>
+        <div class="p-top-overview__btn btn">
+          <%-
+          include('../component/_c-btn',{link:'./works.html',text:'詳しく見る',backColor:'black'})
+          %>
+        </div>
       </div>
     </div>
   </div>
