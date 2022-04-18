@@ -1,0 +1,39 @@
+@use "global"as *;
+.p-footer-nav{}
+
+.p-footer-nav__items {
+	@include mq(md) {
+		display: flex;
+	}
+}
+
+.p-footer-nav__item {
+	margin-top: rem(8);
+
+	@include mq(md) {
+		position: relative;
+		margin-top: 0;
+		margin-left: rem(32);
+	}
+}
+
+.p-footer-nav__item::after {
+	@include mq(md) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 1px;
+		background: $underline-yellow;
+		transform: scale(0, 1);
+		transform-origin: left top;
+		transition: transform 0.3s;
+	}
+}
+
+.p-footer-nav__item:hover:after {
+	@include mq(md) {
+		transform: scale(1, 1);
+	}
+}
