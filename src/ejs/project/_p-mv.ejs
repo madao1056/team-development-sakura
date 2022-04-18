@@ -1,18 +1,23 @@
-<div class="p-mv__block">
-  <div class="p-mv__container js-swiper1">
-    <div class="p-mv__wrapper swiper-wrapper">
-      <% let urlTop = "./images/top/mv0" %> <% let urlBottom = ".jpg" %> <% for
-      (let i = 1; i < 4; i++) { %>
-      <div class="p-mv__slide swiper-slide">
-        <div class="p-mv__img">
-          <img src="<%= urlTop + i + urlBottom%>" alt="メインビュー0<%= i %>" />
+<div class="p-mv">
+  <div class="p-mv__block">
+    <div class="p-mv__container js-swiper1">
+      <div class="p-mv__wrapper swiper-wrapper">
+        <% let urlTop = "./images/top/mv0" %> <% let urlBottom = ".jpg" %> <%
+        for (let i = 1; i < 4; i++) { %>
+        <div class="p-mv__slide swiper-slide">
+          <div class="p-mv__img">
+            <img
+              src="<%= urlTop + i + urlBottom%>"
+              alt="メインビュー0<%= i %>"
+            />
+          </div>
         </div>
+        <% } %>
       </div>
-      <% } %>
     </div>
-  </div>
-  <div class="p-mv__title-box">
-    <h1 class="p-mv__title-main">メインタイトルが入ります</h1>
-    <h2 class="p-mv__title-sub">サブタイトルが入ります</h2>
+    <div class="p-mv__title-box">
+      <h1 class="p-mv__title-main">メインタイトルが入ります</h1>
+      <h2 class="p-mv__title-sub">サブタイトルが入ります</h2>
+    </div>
   </div>
 </div>
