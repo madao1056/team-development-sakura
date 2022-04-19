@@ -1,7 +1,9 @@
-<% var position = { LorR: 'R' } %> <%-
-include('../component/_c-title',{japaneseTitle:'制作実績',englishTitle:'works',enTitle:
-position}) %>
+<% var position = { LorR: 'R' } %>
 <div class="p-top-works">
+  <div class="l-inner">
+    <%-include('../component/_c-title',{japaneseTitle:'制作実績',englishTitle:'works',enTitle:position})
+    %>
+  </div>
   <div class="p-top-works__group">
     <div class="p-top-works__block">
       <ul class="p-top-works__box slider">
@@ -19,7 +21,7 @@ position}) %>
     </div>
     <div class="p-top-works__contents">
       <div class="p-top-works__wrapper">
-        <div class="p-top-works__header p-top-works__header--left">
+        <div class="p-top-works__header">
           <div class="p-top-works__title">メインタイトルが入ります</div>
         </div>
         <div class="p-top-works__body">
