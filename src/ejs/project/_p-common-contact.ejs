@@ -1,16 +1,20 @@
+<% var position = { LorR: 'L' } %>
+
 <div class="p-common-contact">
   <div class="p-common-contact__inner l-inner">
     <div class="p-common-contact__header">
       <%- include
-      ('../component/_c-title',{japaneseTitle:'お問い合わせ',englishTitle:'contact'})
+      ('../component/_c-title',{japaneseTitle:'お問い合わせ',englishTitle:'contact',enTitle:position})
       %>
     </div>
     <p class="p-common-contact__text">
       テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
     </p>
     <div class="p-common-contact__btn">
-      <%- include ('../component/_c-btn',{link:'./',text:'お問い合わせ'}) %>
+      <%- include
+      ('../component/_c-btn',{link:'./',text:'お問い合わせ',backColor:'black'})
+      %>
     </div>
   </div>
   <!-- /.p-common-contact__inner -->
-</section>
+</div>

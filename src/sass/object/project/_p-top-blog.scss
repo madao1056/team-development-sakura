@@ -1,35 +1,27 @@
-@use "global"as *;
+@use "global" as *;
 
-.p-top-blog{
-
-}
-.p-top-blog__inner {
-	padding-top: rem(48);
-
-	@include mq(md) {
-		padding-top: rem(160);
-	}
+.p-top-blog {
 }
 
 .p-top-blog__title {
-	@include mq(md) {
-		padding-bottom: rem(42);
-	}
+  @include mq(md) {
+    padding-bottom: rem(42);
+  }
 }
 
 .p-top-blog__item {
-	padding-top: rem(17);
+  padding-top: rem(17);
 
-	@include mq(md) {
-		padding-top: 0;
-	}
+  @include mq(md) {
+    padding-top: 0;
+  }
 }
 
 .p-top-blog__btn {
-	margin-top: rem(23);
-	text-align: center;
+  margin-top: rem(23);
+  text-align: center;
 
-	@include mq(md) {
-		margin-top: rem(44);
-	}
+  @include mq(md) {
+    margin-top: rem(44);
+  }
 }
