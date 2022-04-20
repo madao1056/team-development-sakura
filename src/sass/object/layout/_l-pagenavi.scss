@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-pagenavi{
+  margin-top: rem(60);
+  margin-bottom: rem(90);
+  @include mq(md) {
+    margin-top: rem(104);
+    margin-bottom: rem(150);
+  }
+}

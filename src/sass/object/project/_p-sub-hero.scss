@@ -20,23 +20,23 @@
 }
 
 .p-sub-hero--news {
-    background-image: url(./images/news/news-mv-sp.jpg);
+    background-image: url(../images/news/news-mv-sp.jpg);
     @include mq(md) {
-        background-image: url(./images/news/news-mv-pc.jpg);
+        background-image: url(../images/news/news-mv-pc.jpg);
     }
 }
 
 .p-sub-hero--content {
-    background-image: url(./images/content/content-mv-sp.jpg);
+    background-image: url(../images/content/content-mv-sp.jpg);
     @include mq(md) {
-        background-image: url(./images/content/content-mv-pc.jpg);
+        background-image: url(../images/content/content-mv-pc.jpg);
     }
 }
 
 .p-sub-hero--works {
-    background-image: url(./images/works/works-mv-sp.jpg);
+    background-image: url(../images/works/works-mv-sp.jpg);
     @include mq(md) {
-        background-image: url(./images/works/works-mv-pc.jpg);
+        background-image: url(../images/works/works-mv-pc.jpg);
     }
 }
 
@@ -49,16 +49,16 @@
 }
 
 .p-sub-hero--company {
-    background-image: url(./images/company/company-mv-sp.jpg);
+    background-image: url(../images/company/company-mv-sp.jpg);
     @include mq(md) {
-        background-image: url(./images/company/company-mv-pc.jpg);
+        background-image: url(../images/company/company-mv-pc.jpg);
     }
 }
 
 .p-sub-hero--blog {
-    background-image: url(./images/blog/blog-mv-sp.jpg);
+    background-image: url(../images/blog/blog-mv-sp.jpg);
     @include mq(md) {
-        background-image: url(./images/blog/blog-mv-pc.jpg);
+        background-image: url(../images/blog/blog-mv-pc.jpg);
     }
 }
 
