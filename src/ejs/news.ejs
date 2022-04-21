@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_p-header') %> 
+    <%- include ('./project/_p-sub-hero',{section_name:'news',title:'お知らせ'}) %>
+    <%- include ('./component/_c-breadcrumb',{pagetitle:'お知らせ一覧', detailtitle:''}) %>
+    <div class="l-news">
+      <%- include ('./project/_p-news') %>
+    </div>
+    <%- include ('./project/_p-common-contact') %>
+    <%- include('./common/_p-footer') %>
+  </body>
+</html>
