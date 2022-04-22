@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
-  <body>
- 
-  </body>
+<%- include('./common/_head') %>
+
+<body>
+  <%- include('./common/_p-header') %>
+  <%- include ('./project/_p-sub-hero',{section_name:'overview',title:'企業概要'}) %>
+  <%- include ('./component/_c-breadcrumb',{pagetitle:'企業概要', detailtitle:''}) %>
+  <div class="l-news">
+  </div>
+  <%- include ('./project/_p-common-contact') %>
+  <%- include('./common/_p-footer') %>
+</body>
+
 </html>
