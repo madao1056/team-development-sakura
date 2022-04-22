@@ -9,6 +9,7 @@
 
 .wp-pagenavi a,
 .wp-pagenavi span {
+	display: inline-block;
 	color: $white;
 	background-color: $black;
 	border: 1px solid $white;
