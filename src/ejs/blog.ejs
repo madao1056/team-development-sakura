@@ -3,10 +3,13 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_p-header') %> <%-
-    include('./project/_p-sub-hero',{section_name:'content',title:'事業内容'})
-    %> <%- include('./component/_c-breadcrumb',{pagetitle:'事業内容',
+    include('./project/_p-sub-hero',{section_name:'blog',title:'ブログ'}) %>
+
+    <div class="l-category"><%- include('./component/_c-category') %></div>
+    <%- include('./component/_c-breadcrumb',{pagetitle:'ブログ',
     detailtitle:''}) %>
-    <div class="l-sub-content"><%- include('./project/_p-sub-content')%></div>
+
+    <div class="l-blog-card"><%- include('./project/_p-blog-card')%></div>
 
     <div class="l-common-contact">
       <%- include('./project/_p-common-contact')%>

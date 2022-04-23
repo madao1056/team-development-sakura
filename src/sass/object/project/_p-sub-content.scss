@@ -32,10 +32,3 @@
     margin-top: rem(150);
   }
 }
-
-.p-sub-content__item + .p-sub-content__item {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(104);
-  }
-}
