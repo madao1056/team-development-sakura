@@ -1,7 +1,10 @@
-<%  let urlTopBlog = "./images/blog/blog0" %>
-<a href="./blog-detail.html" class="c-card">
+<%  let urlCard = "./images/blog/blog0" %>
+<%# 通常のカードの場合 %>
+<% if( articleCard == 'topCard') { %>
+<a href="#" class="c-card">
+
   <figure class="c-card__thumb">
-    <img src="<%= urlTopBlog %><%= num + 1 %>.jpg" alt="" />
+    <img src="<%= urlCard %><%= num + 1 %>.jpg" alt="" />
   </figure>
   <div class="c-card__body">
     <h3 class="c-card__title">
@@ -16,3 +19,20 @@
     </div>
   </div>
 </a>
+<%# 関連記事の場合 %>
+<% } else if( articleCard == 'recommendCard') { %>
+<a href="#" class="c-card">
+  <figure class="c-card__thumb c-card__thumb--recommend">
+    <img src="<%= urlCard %><%= num + 1 %>.jpg" alt="" />
+  </figure>
+  <div class="c-card__body c-card__body--recommend">
+    <h3 class="c-card__title c-card__title--recommend">
+      タイトルが入ります。タイトルが入ります。
+    </h3>
+      <div class="c-card__info">
+      <span class="c-card__category">カテゴリ</span>
+      <time class="c-card__date" datetime="2021-07-20">2021.07.20</time>
+    </div>
+  </div>
+</a>
+<% } %>

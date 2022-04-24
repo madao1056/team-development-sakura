@@ -1,0 +1,12 @@
+@use "global"as *;
+
+.p-works-points{
+
+}
+
+.p-works-points__item+.p-works-points__item{
+  margin-top: rem(55);
+@include mq(md) {
+  margin-top: rem(71);
+}
+}
