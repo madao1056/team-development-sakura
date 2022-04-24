@@ -1,16 +1,17 @@
 <% if (enTitle.LorR == 'L') { %>
-<div class="c-title">
-  <h2 class="c-title__ja"><%= japaneseTitle %></h2>
-  <span class="c-title__en"> <%= englishTitle %> </span>
-</div>
-<% } else if (enTitle.LorR == 'R') { %>
-<div class="c-title">
-  <h2 class="c-title__ja"><%= japaneseTitle %></h2>
-  <span class="c-title__en c-title__en--right"> <%= englishTitle %> </span>
-</div>
-<% } else { %>
-<div class="c-title">
-  <h2 class="c-title__ja"><%= japaneseTitle %></h2>
-  <span class="c-title__en"> <%= englishTitle %> </span>
-</div>
+  <div class="c-title">
+    <h2 class="c-title__ja"><%= japaneseTitle %></h2>
+    <span class="c-title__en"><%= englishTitle %></span>
+  </div>
+    <% } else if (enTitle.LorR == 'R') { %>
+  <div class="c-title">
+    <h2 class="c-title__ja"><%= japaneseTitle %></h2>
+    <span class="c-title__en c-title__en--right">
+      <%= englishTitle %> </span>
+  </div>
+    <% } else { %>
+  <div class="c-title">
+    <h2 class="c-title__ja"><%= japaneseTitle %></h2>
+    <span class="c-title__en"><%= englishTitle %></span>
+  </div>
 <% } %>

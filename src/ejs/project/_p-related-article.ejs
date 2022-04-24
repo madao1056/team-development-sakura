@@ -1,0 +1,12 @@
+<div class="p-related-article">
+  <div class="p-related-article__inner">
+    <%- include('../component/_c-title-list')  %>
+    <div class="p-related-article__items">
+      <% for (let i = 0; i < 4; i++) { %>
+        <div class="p-related-article__item">
+          <%- include('../component/_c-card',{num: i})  %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
