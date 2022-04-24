@@ -1,0 +1,30 @@
+<div class="p-works-gallery">
+  <!-- メイン -->
+  <div class="p-works-gallery__main gallery-slider swiper">
+    <div class="p-works-gallery__wrapper swiper-wrapper">
+      <% let urlWork1 = "./images/works/works-detail/works-detail0" %>
+      <% for (let i = 1; i <= 8; i++) { %>
+      <div class="swiper-slide">
+        <div class="p-works-gallery__img">
+          <img src="<%= urlWork1 + i %>.jpg" alt="制作実績詳細0<%= i %>" />
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- サムネイル -->
+  <div class="p-works-gallery__thumb gallery-thumbs swiper">
+    <div class="p-works-gallery__wrapper swiper-wrapper">
+      <% let urlWork2 = "./images/works/works-detail/works-detail0" %>
+      <% for (let i = 1; i <= 8; i++) { %>
+      <div class="swiper-slide">
+        <div class="p-works-gallery__img">
+          <img src="<%= urlWork2 + i %>.jpg" alt="制作実績詳細0<%= i %>" />
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

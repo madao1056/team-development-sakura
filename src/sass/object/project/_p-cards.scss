@@ -34,3 +34,32 @@
 		margin-top: rem(25);
 	}
 }
+
+
+.p-cards__item--recommend {
+	@include mq(md) {
+		width: 100%;
+		max-width: calc((100% - #{rem(32)} * 3) / 4);
+	}
+}
+
+.p-cards__item--recommend+.p-cards__item--recommend {
+	margin-top: rem(24);
+
+	@include mq(md) {
+		margin-top: 0;
+		margin-left: rem(25);
+	}
+}
+
+.p-cards__item--recommend:nth-of-type(4n + 1) {
+	@include mq(md) {
+		margin-left: 0;
+	}
+}
+
+.p-cards__item--recommend:nth-of-type(n + 5) {
+	@include mq(md) {
+		margin-top: rem(25);
+	}
+}

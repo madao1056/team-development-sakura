@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     let swiper1 = new Swiper(".js-swiper1", {
         loop: true,
         effect: "fade",
@@ -19,12 +19,16 @@ $(function() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 4000,
+        },
+        speed: 2000,
     });
 
     //サムネイル
     let thumbs = new Swiper(".gallery-thumbs", {
         slidesPerView: "auto",
-        spaceBetween: 10,
+        spaceBetween: 24,
         centeredSlides: true,
         loop: true,
         slideToClickedSlide: true,
