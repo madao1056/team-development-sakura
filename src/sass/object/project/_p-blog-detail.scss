@@ -1,0 +1,15 @@
+@use "global" as *;
+
+
+.p-blog-detail__inner{
+max-width:rem(800);
+width:100%;
+margin: 0 auto;
+}
+
+.p-blog-detail__related-article {
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}

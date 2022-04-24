@@ -3,16 +3,26 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_p-header') %>
-    <%- include('./project/_p-sub-hero',{section_name:'blog',title:'ブログ'}) %>
     
     <div class="l-inner">
-      <div class="l-blog">
+      <div class="l-blog-detail">
         <%- include('./component/_c-breadcrumb',{pagetitle:'ブログ',detailtitle:''}) %>
-        <%- include('./component/_c-category') %>
-        <%- include('./project/_p-cards')%>
-        <div class="p-blog__pagenav">
-          <%- include('./component/_c-pagenavi') %>
+
+        <div class="p-blog-detail__inner">
+
+          <div class="p-blog-detail__content">
+            <%- include('./project/_p-blog-content')%>
+          </div>
+       
+          <div class="p-blog__pagenav">
+            <%- include('./component/_c-pagenavi-string') %>
+          </div>
         </div>
+
+        <div class="p-blog-detail__related-article">
+          <%- include('./project/_p-related-article') %>
+        </div>
+
       </div>
     </div>
     <div class="l-common-contact">

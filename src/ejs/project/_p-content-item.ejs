@@ -1,24 +1,28 @@
-<% var array = [ { title: '企業理念1', img: 'content01' }, { title:
-'企業理念2',img: 'content02' }, { title: '企業理念3', img: 'content03' }, ];%>
-<% array.forEach(function (value) { %>
-
-<div class="p-content-item">
-  <div class="p-content-item__box">
-    <div class="p-content-item__img">
-      <img
-        class="p-content-item__img"
-        src="./images/content/<%= value.img %>.jpg"
-        alt="<%= value.title %>"
-        title="<%= value.title %>"
-      />
-    </div>
-    <div class="p-content-item__content">
-      <h3 class="p-content-item__title"><%= value.title %></h3>
-      <div class="p-content-item__text">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+<% var array = [ 
+  { title: '企業理念1', img: 'content01' },
+  { title: '企業理念2', img: 'content02' },
+  { title: '企業理念3', img: 'content03' },
+ ];%>
+ 
+<%  array.forEach(function (value) { %>
+  <div class="p-content-item">
+    <div class="p-content-item__box">
+      <div class="p-content-item__img">
+        <img
+          class="p-content-item__img"
+          src="./images/content/<%= value.img %>.jpg"
+          alt="<%= value.title %>"
+          title="<%= value.title %>"
+        />
+      </div>
+      <div class="p-content-item__content">
+        <h3 class="p-content-item__title">
+        <%= value.title %>
+        </h3>
+        <div class="p-content-item__text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 <% }); %>
