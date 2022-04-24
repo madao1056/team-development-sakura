@@ -10,9 +10,17 @@
     padding-right: $padding-pc;
   }
 }
+
 .p-content-item:nth-child(even) .p-content-item__box .p-content-item__content {
   @include mq(md) {
     padding: 0 rem(30) 0 0;
+  }
+}
+
+.p-content-item + .p-content-item {
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(104);
   }
 }
 

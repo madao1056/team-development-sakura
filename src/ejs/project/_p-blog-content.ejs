@@ -1,0 +1,44 @@
+<div class="p-blog-content__title01">
+  <%-
+  include('../component/_c-article-title01',{title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。',date:'2020/06/13',category:'カテゴリ'})
+  %>
+</div>
+<figure class="p-blog-content__thumbnail">
+  <img src="./images/blog/blog-detail/blog-detail01.jpg" alt="">
+</figure>
+<div class="p-blog-content__text01">
+  <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+  </p>
+</div>
+<div class="p-blog-content__title02">
+  <%- include('../component/_c-article-title02',{title02:'見出し２'}) %>
+</div>
+<div class="p-blog-content__text02">
+  <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+  </p>
+</div>
+
+<div class="p-blog-content__title03">
+  <%-
+  include('../component/_c-article-title03',{title03:'見出し３見出し３見出し３見出し３'})
+  %>
+</div>
+<div class="p-blog-content__text03">
+  <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+  </p>
+</div>
+<figure class="p-blog-content__img">
+  <img src="./images/blog/blog-detail/blog-detail02.jpg" alt="">
+</figure>
+
+<div class="p-blog-content__lists">
+  <% for (let i = 0; i < 4; i++) { %>
+  <%- include('../component/_c-blog-list01') %>
+  <% } %>
+</div>
+
+<div class="p-blog-content__lists">
+  <% for (let i = 0; i < 4; i++) { %>
+  <%- include('../component/_c-blog-list02',{num: i}) %>
+  <% } %>
+</div>

@@ -1,7 +1,9 @@
 <div class="p-cards">
+
   <%# 通常のカードの場合 %>
   <% if( articleCards == 'topCards') { %>
   <% for (let i = 0; i < max; i++) { %>
+
   <article class="p-cards__item">
     <%- include('../component/_c-card',{num:i,articleCard:'topCard'}) %>
   </article>

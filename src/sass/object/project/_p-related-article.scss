@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-related-article__items {
+  margin-top: rem(32);
+  width: 100%;
+  @include mq(md) {
+    margin-top: rem(80);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-related-article__item + .p-related-article__item {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+    margin-left: rem(32);
+  }
+}
