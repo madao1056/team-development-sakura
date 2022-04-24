@@ -7,7 +7,6 @@
 .c-category__inner {
   padding-top: rem(85);
   padding-bottom: rem(37);
-
   @include mq(md) {
     padding-top: rem(115);
     padding-bottom: rem(40);
@@ -22,14 +21,19 @@
 
 .c-category__item {
   margin: rem(18) rem(13) 0;
-
   @include mq(md) {
     margin: 0 rem(19) 0;
   }
 }
 
+.c-category__item:first-child{
+	margin-left: 0;
+}
+
+
 .c-category__link {
-  color: $white;
+	display: inline-block;
+	color: $white;
 }
 
 .c-category__link--current {

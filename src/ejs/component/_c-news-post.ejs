@@ -1,3 +1,4 @@
+<%# 例）include('../component/_c-news-post',{news:'newsTop'}) %>
 <div class="c-news-post">
   <a class="c-news-post__link" href="#">
     <div class="c-news-post__info">
@@ -5,12 +6,12 @@
       <span class="c-news-post__category">お知らせ</span>
     </div>
     <%# トップページの場合 %>
-    <% if( topNews == 'c-news-post__text--top' ) { %>
+    <% if( newsTitle == 'newsTop') { %>
     <div class="c-news-post__text c-news-post__text--top">
       記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
     </div>
     <%# 下層ページの場合 %>
-    <% } else if(pageNews == 'c-news-post__text--page') { %>
+    <% } else if( newsTitle == 'newsPage') { %>
     <div class="c-news-post__text c-news-post__text--page">
       記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
     </div>

@@ -1,4 +1,5 @@
-<%# 例）include('./project/_p-img-card',{link:./images/works/works01.jpg, category:'カテゴリ', company_name:'Codeups株式会社'}) %>
+<%# 例）include ('../project/_p-img-card',{link:'#',category:'カテゴリ',worksLink:'./images/works/works01.jpg',companyName:'CodeUps株式会社'
+    }) %>
 
     <div class="p-img-card">
         <a href="<%= link %>" class="p-img-card__box">
@@ -6,11 +7,11 @@
                 <%= category %>
             </div>
             <div class="p-img-card__img">
-                <img src="<%= works_link %>" alt="<%= company_name %>" />
+                <img src="<%= worksLink %>" alt="<%= companyName %>" />
             </div>
             <div class="p-img-card__content">
                 <div class="p-img-card__title">
-                    <%= company_name %>
+                    <%= companyName %>
                 </div>
             </div>
         </a>
