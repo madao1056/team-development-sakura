@@ -9,7 +9,7 @@
       <div class="l-blog">
         <%- include('./component/_c-breadcrumb',{pagetitle:'ブログ',detailtitle:''}) %>
         <%- include('./component/_c-category') %>
-        <%- include('./project/_p-cards')%>
+        <%- include('./project/_p-cards',{max:9,articleCards:'topCards'})%>
         <div class="p-blog__pagenav">
           <%- include('./component/_c-pagenavi') %>
         </div>
