@@ -1,54 +1,28 @@
-<div class="p-content-item">
-  <div class="p-content-item__box">
-    <div class="p-content-item__img">
-      <img
-        class="p-content-item__img"
-        src="./images/content/content01.jpg"
-        alt="企業理念１"
-        title="企業理念１"
-      />
-    </div>
-    <div class="p-content-item__content">
-      <h3 class="p-content-item__title">企業理念１</h3>
-      <div class="p-content-item__text">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+<% var array = [ 
+  { title: '企業理念1', img: 'content01' },
+  { title: '企業理念2', img: 'content02' },
+  { title: '企業理念3', img: 'content03' },
+ ];%>
+ 
+<%  array.forEach(function (value) { %>
+  <div class="p-content-item">
+    <div class="p-content-item__box">
+      <div class="p-content-item__img">
+        <img
+          class="p-content-item__img"
+          src="./images/content/<%= value.img %>.jpg"
+          alt="<%= value.title %>"
+          title="<%= value.title %>"
+        />
+      </div>
+      <div class="p-content-item__content">
+        <h3 class="p-content-item__title">
+        <%= value.title %>
+        </h3>
+        <div class="p-content-item__text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="p-content-item">
-  <div class="p-content-item__box">
-    <div class="p-content-item__img">
-      <img
-        class="p-content-item__img"
-        src="./images/content/content02.jpg"
-        alt="企業理念２"
-        title="企業理念２"
-      />
-    </div>
-    <div class="p-content-item__content">
-      <h3 class="p-content-item__title">企業理念２</h3>
-      <div class="p-content-item__text">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </div>
-    </div>
-  </div>
-</div>
-<div class="p-content-item">
-  <div class="p-content-item__box">
-    <div class="p-content-item__img">
-      <img
-        class="p-content-item__img"
-        src="./images/content/content03.jpg"
-        alt="企業理念３"
-        title="企業理念３"
-      />
-    </div>
-    <div class="p-content-item__content">
-      <h3 class="p-content-item__title">企業理念３</h3>
-      <div class="p-content-item__text">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </div>
-    </div>
-  </div>
-</div>
+<% }); %>

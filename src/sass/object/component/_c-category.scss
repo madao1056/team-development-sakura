@@ -1,19 +1,31 @@
-@use "global"as *;
+@use "global" as *;
 
 .c-category {
+  background-color: $black;
 }
 
+.c-category__inner {
+  padding-top: rem(85);
+  padding-bottom: rem(37);
+  @include mq(md) {
+    padding-top: rem(115);
+    padding-bottom: rem(40);
+  }
+}
 
 .c-category__items {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .c-category__item {
-margin-left: rem(24);
-margin-top: rem(16);
+  margin: rem(18) rem(13) 0;
+  @include mq(md) {
+    margin: 0 rem(19) 0;
+  }
 }
+
 .c-category__item:first-child{
 	margin-left: 0;
 }
@@ -25,7 +37,8 @@ margin-top: rem(16);
 }
 
 .c-category__link--current {
-	color: $text;
-	background-color: $white;
-	padding: rem(3) rem(8);
+  display: inline-block;
+  color: $text;
+  background-color: $white;
+  padding: rem(3) rem(8);
 }
