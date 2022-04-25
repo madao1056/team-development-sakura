@@ -1,8 +1,10 @@
 <div class="p-related-article">
-  <div class="p-related-article__inner">
-    <%- include('../component/_c-title-list')  %>
+  <div class="p-related-article__inner l-inner">
+    <div class="p-related-article__title">
+      <%- include('../component/_c-title-list')  %>
+    </div>
     <div class="p-related-article__items">
-       <%- include ('../project/_p-cards',{max:4,articleCards:'recommendCards'}) %>
+      <%- include ('../project/_p-cards',{max:4,articleCards:'relatedCards'}) %>
     </div>
   </div>
 </div>

@@ -36,14 +36,14 @@
 }
 
 
-.p-cards__item--recommend {
+.p-cards__item--related {
 	@include mq(md) {
 		width: 100%;
 		max-width: calc((100% - #{rem(32)} * 3) / 4);
 	}
 }
 
-.p-cards__item--recommend+.p-cards__item--recommend {
+.p-cards__item--related+.p-cards__item--related {
 	margin-top: rem(24);
 
 	@include mq(md) {
@@ -52,13 +52,13 @@
 	}
 }
 
-.p-cards__item--recommend:nth-of-type(4n + 1) {
+.p-cards__item--related:nth-of-type(4n + 1) {
 	@include mq(md) {
 		margin-left: 0;
 	}
 }
 
-.p-cards__item--recommend:nth-of-type(n + 5) {
+.p-cards__item--related:nth-of-type(n + 5) {
 	@include mq(md) {
 		margin-top: rem(25);
 	}

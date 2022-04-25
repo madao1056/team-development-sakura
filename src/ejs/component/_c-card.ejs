@@ -20,16 +20,16 @@
   </div>
 </a>
 <%# 関連記事の場合 %>
-<% } else if( articleCard == 'recommendCard') { %>
+<% } else if( articleCard == 'relatedCard') { %>
 <a href="#" class="c-card">
-  <figure class="c-card__thumb c-card__thumb--recommend">
+  <figure class="c-card__thumb c-card__thumb--related">
     <img src="<%= urlCard %><%= num + 1 %>.jpg" alt="" />
   </figure>
-  <div class="c-card__body c-card__body--recommend">
-    <h3 class="c-card__title c-card__title--recommend">
+  <div class="c-card__body c-card__body--related">
+    <h3 class="c-card__title c-card__title--related">
       タイトルが入ります。タイトルが入ります。
     </h3>
-      <div class="c-card__info">
+    <div class="c-card__info">
       <span class="c-card__category">カテゴリ</span>
       <time class="c-card__date" datetime="2021-07-20">2021.07.20</time>
     </div>
