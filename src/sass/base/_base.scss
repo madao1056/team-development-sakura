@@ -28,6 +28,15 @@ body {
     color: $white;
 }
 
+//コンテンツが少ない場合もフッターを最下部に表示
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 
 /* pcの電話番号発信対応 */
 
