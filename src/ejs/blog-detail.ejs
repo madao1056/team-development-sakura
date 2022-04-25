@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_p-header') %>
+    
+    <div class="l-inner">
+      <div class="l-blog-detail">
+        <%- include('./component/_c-breadcrumb',{pagetitle:'ブログ',detailtitle:'ブログ記事詳細'}) %>
 
-    <body>
-        <%- include('./common/_p-header') %>
+        <div class="p-blog-detail__inner">
 
-            <div class="l-inner">
-                <div class="l-blog-detail">
-                    <%- include('./component/_c-breadcrumb',{pagetitle:'ブログ',detailtitle:''}) %>
+          <div class="p-blog-detail__content">
+            <%- include('./project/_p-blog-content')%>
+          </div>
+       
+          <div class="p-blog__pagenav">
+            <%- include('./component/_c-pagenavi-string') %>
+          </div>
+        </div>
 
-                        <div class="p-blog-detail__inner">
+        <div class="p-blog-detail__related-article">
+          <%- include('./project/_p-related-article') %>
+        </div>
 
-                            <div class="p-blog-detail__content">
-                                <%- include('./project/_p-blog-content')%>
-                            </div>
-
-                            <div class="p-blog__pagenav">
-                                <%- include('./component/_c-pagenavi-string') %>
-                            </div>
-                        </div>
-
-                        <div class="p-blog-detail__related-article">
-                            <%- include('./project/_p-related-article') %>
-                        </div>
-
-                </div>
-            </div>
-            <div class="l-common-contact">
-                <%- include('./project/_p-common-contact')%>
-            </div>
-
-            <div class="l-footer">
-                <%- include('./common/_p-footer') %>
-            </div>
-    </body>
-
+      </div>
+    </div>
+    <div class="l-common-contact">
+      <%- include('./project/_p-common-contact')%>
+    </div>
+    
+    <div class="l-footer">    
+      <%- include('./common/_p-footer') %>
+    </div>
+  </body>
 </html>
