@@ -27,11 +27,21 @@ jQuery(function ($) {
     });
 
     // ヘッダー
+    // $(window).on("scroll", function () {
+    //     if ($(".p-sub-hero p-mv").height() < $(this).scrollTop()) {
+    //         $(".p-header__inner").css("background-color","rgba(17,17,17,1)");
+    //     } else {
+    //         $(".p-header__inner").css("background-color","rgba(17,17,17,0.5)");
+    //     }
+    // });
+
+    // スクロールするとヘッダーの背景色変更
+    var elemTop = $(".p-mv,.p-sub-hero,.l-breadcrumb").outerHeight();
     $(window).on("scroll", function () {
-        if ($(".slider1").height() < $(this).scrollTop()) {
-            $(".header").css("background", "rgba(17,17,17,1)");
+        if (elemTop < $(this).scrollTop()) {
+            $(".js-header").addClass("headerColorScroll");
         } else {
-            $(".header").css("background", "rgba(17,17,17,0.5)");
+            $(".js-header").removeClass("headerColorScroll");
         }
     });
 

@@ -1,6 +1,4 @@
-<!-- includeする際、『pagetitle』と『detailtitle』パラメータを設定 -->
-<!-- （詳細ページ以外は『detailtitle』は空欄でOK） -->
-<%# 例）include('./component/_c-breadcrumb',{pagetitle:'制作実績', detailtitle:''}) %>
+<%# 例）include('./component/_c-breadcrumb',{pageTitle:'制作実績', detailTitle:''}) %>
     <div class="c-breadcrumb">
         <ol class="c-breadcrumb__list">
             <li class="c-breadcrumb__item">
@@ -10,14 +8,14 @@
             </li>
             <li class="c-breadcrumb__item">
                 <a href="#">
-                    <span><%= pagetitle %></span>
+                    <span><%= pageTitle %></span>
                 </a>
             </li>
 
-            <% if (detailtitle) { %>
+            <% if (detailTitle) { %>
                 <li class="c-breadcrumb__item">
                     <a href="#">
-                        <span><%= detailtitle %></span>
+                        <span><%= detailTitle %></span>
                     </a>
                 </li>
 
