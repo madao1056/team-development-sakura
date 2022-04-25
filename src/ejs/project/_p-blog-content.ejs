@@ -32,13 +32,9 @@
 </figure>
 
 <div class="p-blog-content__lists">
-  <% for (let i = 0; i < 4; i++) { %>
   <%- include('../component/_c-blog-list01') %>
-  <% } %>
 </div>
 
 <div class="p-blog-content__lists">
-  <% for (let i = 0; i < 4; i++) { %>
-  <%- include('../component/_c-blog-list02',{num: i}) %>
-  <% } %>
+  <%- include('../component/_c-blog-list02') %>
 </div>

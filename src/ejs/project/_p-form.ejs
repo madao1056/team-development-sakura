@@ -1,0 +1,24 @@
+<% let array = [ 
+  { title: '会社名・団体名', type: 'text', placeholder: 'テキストがはいります' },
+  { title: '部署名', type: 'text', placeholder: 'テキストがはいります' },
+  { title: 'お名前', type: 'text', placeholder: 'テキストがはいります' },
+  { title: 'ふりがな', type: 'text', placeholder: 'テキストがはいります' },
+  { title: 'メールアドレス', type: 'email', placeholder: 'テキストがはいります' },
+];%>
+    <div class="p-contact__form p-form">
+        <div class="p-form__errorText">
+            <p>※必要事項を入力してください</p>
+        </div>
+        <%  array.forEach(function (value) { %>
+            <div class="p-form__item">
+                <p class="p-form__item--label">
+                    <%= value.title %>
+                </p>
+                <input type="<%= value.type %>" class="p-form__item--input" placeholder="<%= value.title %>" />
+            </div>
+            <% }); %>
+                <div class="p-form__item">
+                    <p class="p-form__item--label isMsg">お問い合わせ内容</p>
+                    <textarea class="p-form__item--textarea" placeholder="テキストがはいります"></textarea>
+                </div>
+    </div>

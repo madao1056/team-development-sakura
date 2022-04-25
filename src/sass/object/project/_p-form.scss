@@ -1,0 +1,125 @@
+@use 'global'as *;
+.p-form {
+    max-width: rem(720);
+    position: relative;
+}
+
+.p-form__errorText {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #FF5757;
+    font-size: rem(16);
+    letter-spacing: 0.2em;
+    display: none;
+    @include mq(md) {
+        top: -8%;
+        left: 60%;
+    }
+}
+
+.p-form__item {
+    margin-top: rem(33);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(540);
+    width: 100%;
+    @include mq(md) {
+        max-width: rem(696);
+        display: flex;
+        align-items: center;
+        margin-top: rem(45);
+    }
+}
+
+.p-form__item--label {
+    width: 100%;
+    max-width: rem(540);
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    font-size: rem(14);
+    line-height: 1.714285;
+    @include mq(md) {
+        max-width: rem(156);
+        text-align: end;
+        padding-right: rem(23);
+    }
+}
+
+.p-form__item--label::before {
+    content: "※";
+}
+
+.p-form__item--label.isMsg {
+    margin-top: rem(8);
+    margin-bottom: auto;
+    @include mq(md) {
+        margin-top: rem(9);
+    }
+}
+
+.p-form__item--input {
+    padding: rem(12) rem(16) rem(12) rem(9);
+    width: 100%;
+    max-width: rem(540);
+    background: #eaedf2;
+    font-size: rem(14);
+    letter-spacing: 0.05em;
+    margin-top: rem(16);
+    @include mq(md) {
+        margin-top: 0;
+        padding: rem(12) rem(16);
+        height: rem(40);
+        flex: inherit;
+        font-size: rem(15);
+        letter-spacing: 0;
+    }
+}
+
+.p-form__item--textarea {
+    margin-top: rem(16);
+    padding: rem(19) rem(7);
+    height: rem(250);
+    width: 100%;
+    letter-spacing: 0.05em;
+    max-width: rem(540);
+    background: #eaedf2;
+    font-size: rem(14);
+    @include mq(md) {
+        margin-top: 0;
+        margin-left: 0;
+        padding: rem(10) rem(16);
+        height: rem(300);
+        flex: inherit;
+        font-size: rem(15);
+        letter-spacing: 0;
+    }
+}
+
+.p-form__item--input.error,
+.p-form__item--textarea.error {
+    background: #FFDCDC;
+}
+
+.p-form__btn {
+    margin-top: rem(43);
+    margin-left: auto;
+    margin-right: auto;
+    padding: rem(10) 0;
+    width: 100%;
+    max-width: rem(360);
+    display: block;
+    letter-spacing: 0.05em;
+    background: #fff;
+    color: #333;
+    font-weight: 300;
+    font-size: rem(20);
+    @include mq(md) {
+        margin-top: rem(56);
+        padding: rem(18) 0;
+        font-size: rem(16);
+    }
+}

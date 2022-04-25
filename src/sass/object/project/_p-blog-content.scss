@@ -1,8 +1,49 @@
-@use 'global' as *;
+@use 'global'as *;
 
 .p-blog-content__title01 {
   margin-top: rem(78);
+
   @include mq(md) {
     margin-top: rem(91);
   }
+}
+
+.p-blog-content__thumbnail,
+.p-blog-content__img {
+  margin: rem(16) calc(50% - 50vw) 0;
+  width: 100vw;
+
+  @include mq(md) {
+    width: 100%;
+    margin: initial;
+    margin-top: rem(32);
+  }
+}
+
+.p-blog-content__text01,
+.p-blog-content__text02,
+.p-blog-content__text03 {
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-blog-content__text01 p,
+.p-blog-content__text02 p,
+.p-blog-content__text03 p {
+  font-size: rem(16);
+  letter-spacing: 0.025em;
+  line-height: 2.1875;
+}
+
+.p-blog-content__lists {
+  margin-top: rem(24);
+
+}
+
+.p-blog-content__lists p {
+  letter-spacing: 0.03em;
+  line-height: 2.1875;
 }
