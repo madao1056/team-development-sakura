@@ -1,14 +1,22 @@
+<% let array = [ 
+  { title: '会社名', desc: 'テキストが入ります。'},
+  { title: '設立', desc: 'テキストが入ります。'},
+  { title: '資本金', desc: 'テキストが入ります。'},
+  { title: '売上高', desc: 'テキストが入ります。'},
+  { title: '代表者', desc: 'テキストが入ります。'},
+  { title: '従業員数', desc: 'テキストが入ります。'},
+  { title: '事業内容', desc: 'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'},
+  { title: '所在地', desc: '東京駅'},
+  ];%>
 <div class="p-overview">
   <div class="l-inner">
-    <dl class="p-overview__info">
-      <%- include ('../component/_c-explain',{explainTitle:'会社名',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'設立',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'資本金',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'売上高',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'代表者',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'従業員数',explainDesc:'テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'事業内容',explainDesc:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
-      <%- include ('../component/_c-explain',{explainTitle:'所在地',explainDesc:'東京駅'}) %>
+    <dl class="p-overview__info c-explain">
+      <%  array.forEach(function (value) { %>
+      <div class="c-explain__block">
+        <dt class="c-explain__header"><%= value.title  %></dt>
+        <dd class="c-explain__description"><%= value.desc %></dd>
+      </div>
+      <% }); %>
     </dl>
   </div>
 </div>
