@@ -1,18 +1,20 @@
 <div class="p-cards">
 
-  <%# 通常のカードの場合 %>
-  <% if( articleCards == 'topCards') { %>
-  <% for (let i = 0; i < max; i++) { %>
+    <%# 通常のカードの場合 %>
+        <% if( articleCards == 'topCards') { %>
+            <% for (let i = 0; i < max; i++) { %>
 
-  <article class="p-cards__item">
-    <%- include('../component/_c-card',{num:i,articleCard:'topCard'}) %>
-  </article>
-  <% } %>
-  <%# 関連記事の場合 %>
-  <% } else if( articleCards == 'relatedCards') { %>
-  <% for (let i = 0; i < max; i++) { %>
-  <article class="p-cards__item p-cards__item--related">
-    <%- include('../component/_c-card',{num:i,articleCard:'relatedCard'}) %>
-  </article>
-  <% } %>
-  <% } %>
+                <article class="p-cards__item">
+                    <%- include('../component/_c-card',{num:i,articleCard:'topCard'}) %>
+                </article>
+                <% } %>
+                    <%# 関連記事の場合 %>
+                        <% } else if( articleCards == 'relatedCards') { %>
+                            <% for (let i = 0; i < max; i++) { %>
+                                <article class="p-cards__item p-cards__item--related">
+                                    <%- include('../component/_c-card',{num:i,articleCard:'relatedCard'}) %>
+                                </article>
+                                <% } %>
+                                    <% } %>
+
+</div>

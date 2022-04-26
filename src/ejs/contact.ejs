@@ -6,17 +6,10 @@
         <%- include('./common/_p-header') %>
             <%- include('./project/_p-sub-hero',{section_name:'contact',title:'お問い合わせ'})%>
                 <%- include('./component/_c-breadcrumb',{pageTitle:'お問い合わせ',detailTitle:''}) %>
-                    <div class="l-contact">
-                        <div class="p-contact">
-                            <div class="p-contact__inner l-inner">
-                                <%- include('./project/_p-form') %>
-                                    <input type="submit" class="p-form__btn" value="送信">
-                            </div>
-                        </div>
+                    <div class="l-form">
+                        <%- include('./project/_p-form') %>
                     </div>
-                    <div class="l-footer">
-                        <%- include('./common/_p-footer') %>
-                    </div>
+                    <%- include('./common/_p-footer') %>
     </body>
 
 </html>
