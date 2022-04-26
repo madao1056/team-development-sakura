@@ -1,4 +1,7 @@
 <div class="p-works">
+  <div class="p-works__tab">
+    <%- include ('../component/_c-category') %>
+  </div>
   <div class="p-works___contents">
     <div class="p-works__content">
       <%- include ('../project/_p-img-card',{link:'works-detail.html',category:'カテゴリ',worksLink:'./images/works/works01.jpg',companyName:'CodeUps株式会社'
@@ -25,5 +28,7 @@
     }) %>
     </div>
   </div>
-  <!-- /.page-works__contents -->
+</div>
+<div class="l-pagenavi">
+  <%- include ('../component/_c-pagenavi') %>
 </div>
