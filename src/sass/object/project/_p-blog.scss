@@ -1,8 +1,2 @@
 @use "global" as *;
 
-.p-blog__pagenav {
-  margin-top: rem(80);
-  @include mq(md) {
-    margin-top: rem(104);
-  }
-}

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
-
-    <body>
-        <%- include('./common/_p-header') %>
-            <%- include('./project/_p-sub-hero',{section_name:'blog',title:'ブログ'}) %>
-                <div class="l-blog l-inner">
-                    <%- include('./project/_p-blog')%>
-                </div>
-                <div class="l-common-contact">
-                    <%- include ('./project/_p-common-contact') %>
-                </div>
-                <%- include('./common/_p-footer') %>
-    </body>
-
+  <%- include('./common/_head') %>
+	  <body>
+    <%- include('./common/_p-header') %>
+    <%- include('./project/_p-sub-hero',{section_name:'blog',title:'ブログ'}) %>
+    <div class="l-blog l-inner">
+    	<%- include('./project/_p-blog')%>
+    </div>
+    <div class="l-common-contact">
+    	<%- include ('./project/_p-common-contact') %>
+    </div>
+    <%- include('./common/_p-footer') %>
+  </body>
 </html>
