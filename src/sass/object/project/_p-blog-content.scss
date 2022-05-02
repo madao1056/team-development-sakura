@@ -18,6 +18,24 @@ margin: 0 auto;
   }
 }
 
+.p-blog-content__title02{
+    margin-top: rem(25);
+    margin-left: rem(9);
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+}
+
+.p-blog-content__title03{
+    margin-top: rem(23);
+    margin-left: rem(9);
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+
+}
+
 .p-blog-content__text01,
 .p-blog-content__text02,
 .p-blog-content__text03 {

@@ -4,12 +4,6 @@
     font-size: rem(18);
     letter-spacing: 0.12em;
     font-weight: 300;
-    margin-top: rem(23);
-    margin-left: rem(9);
-    display: inline-block;
-    @include mq(md) {
-        margin-top: rem(32);
-    }
 }
 
 .c-article-title03::after {

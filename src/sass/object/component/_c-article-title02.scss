@@ -4,11 +4,6 @@
     font-size: rem(20);
     letter-spacing: 0.12em;
     font-weight: 300;
-    margin-top: rem(25);
-    margin-left: rem(9);
-    @include mq(md) {
-        margin-top: rem(32);
-    }
 }
 
 .c-article-title02::before {
