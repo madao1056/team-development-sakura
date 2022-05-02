@@ -5,6 +5,7 @@
 .p-works___contents {
   display: flex;
   flex-wrap: wrap;
+  margin-top: rem(37);
 
   @include mq(md) {
     max-width: $l-inner + strip-unit($padding-pc) * 2;
@@ -12,6 +13,7 @@
     padding-left: $padding-pc;
     margin-right: auto;
     margin-left: auto;
+    margin-top: rem(40);
   }
 }
 
@@ -41,5 +43,13 @@
 .p-works__content:nth-child(n + 3) {
   @include mq(md) {
     margin-top: rem(114);
+  }
+}
+
+.p-works__pagenavi {
+  margin-top: rem(80);
+
+  @include mq(md) {
+    margin-top: rem(104);
   }
 }
