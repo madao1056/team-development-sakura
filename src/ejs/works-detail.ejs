@@ -3,16 +3,16 @@
 <%- include('./common/_head') %>
 
 <body>
-  <%- include('./common/_p-header') %>
+  <%- include('./common/_p-header',{Logo:'lowLogo'}) %>
 
-   <div class="l-breadcrumb l-breadcrumb--detail">
+  <div class="l-breadcrumb l-breadcrumb--detail">
     <%- include ('./component/_c-breadcrumb',{pageTitle:'制作実績', detailTitle:'制作実績詳細'}) %>
   </div>
- 
+
   <div class="l-works-detail">
     <%- include ('./project/_p-works-detail') %>
   </div>
-  
+
   <div class="l-related-article">
     <%- include ('./project/_p-related-article') %>
   </div>
