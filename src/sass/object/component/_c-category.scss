@@ -4,15 +4,6 @@
   background-color: $black;
 }
 
-.c-category__inner {
-  padding-top: rem(85);
-  padding-bottom: rem(37);
-  @include mq(md) {
-    padding-top: rem(115);
-    padding-bottom: rem(40);
-  }
-}
-
 .c-category__items {
   display: flex;
   flex-wrap: wrap;
