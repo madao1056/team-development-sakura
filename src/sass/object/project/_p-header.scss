@@ -7,6 +7,10 @@
 	width: 100%;
 	z-index: 999;
 	background-color: rgba($color: $black, $alpha: 0.5);
+	padding-top: rem(12);
+	@include mq(md) {
+		padding-top: 0;
+	}
 }
 /* スクロールしたらヘッダーメニューの背景カラー変更 */
 .p-header.headerColorScroll {
