@@ -1,6 +1,11 @@
-<%- include('../component/_c-breadcrumb',{pageTitle:'ブログ記事一覧',detailTitle:''}) %>
-<%- include('../component/_c-category') %>
-<%- include('../project/_p-cards',{max:9,articleCards:'topCards'})%>
-<div class="l-pagenavi">
-	<%- include('../component/_c-pagenavi') %>
+<div class="p-blog">
+	<div class="p-blog__tab">
+		<%- include('../component/_c-category') %>
+	</div>
+	<div class="p-blog__cards">
+		<%- include('../project/_p-cards',{max:9,articleCards:'topCards'})%>
+	</div>
+	<div class="p-blog__pagenavi">
+		<%- include('../component/_c-pagenavi') %>
+	</div>
 </div>
