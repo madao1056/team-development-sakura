@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
 
-<body>
-  <%- include('./common/_p-header',{Logo:'lowLogo'}) %>
-
-  <div class="l-inner">
-    <div class="l-breadcrumb--detail">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_p-header') %>
+    
+    <div class="l-breadcrumb l-breadcrumb--detail">
       <%- include('./component/_c-breadcrumb',{pageTitle:'ブログ',detailTitle:'ブログ記事詳細'}) %>
     </div>
-    <div class="l-blog-content">
-      <%- include('./project/_p-blog-content')%>
-    </div>
-    <div class="l-pagenavi-string">
-      <%- include('./component/_c-pagenavi-string') %>
-    </div>
-    <div class="l-related-article">
-      <%- include('./project/_p-related-article') %>
-    </div>
-  </div>
+      <div class="l-blog-content l-inner">
+        <%- include('./project/_p-blog-content')%>
+      </div>
+      <div class="l-pagenavi-string">
+        <%- include('./component/_c-pagenavi-string') %>
+      </div>
+      <div class="l-related-article">
+        <%- include('./project/_p-related-article') %>
+      </div>
+      <div class="l-common-contact">
+        <%- include('./project/_p-common-contact')%>
+      </div>
 
-  <div class="l-common-contact">
-    <%- include('./project/_p-common-contact')%>
-  </div>
-
-  <div class="l-footer">
-    <%- include('./common/_p-footer') %>
-  </div>
-</body>
+      <div class="l-footer">
+        <%- include('./common/_p-footer') %>
+      </div>
+  </body>
 
 </html>
