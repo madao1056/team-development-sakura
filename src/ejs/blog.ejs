@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
+
 	  <body>
     <%- include('./common/_p-header') %>
     <%- include('./project/_p-sub-hero',{section_name:'blog',title:'ブログ'}) %>
       <div class="l-breadcrumb">
 			<%- include('./component/_c-breadcrumb',{pageTitle:'ブログ記事一覧',detailTitle:''})%>
     </div>
-    <div class="l-blog l-inner">
+    <div class="l-blog">
     	<%- include('./project/_p-blog')%>
     </div>
     <div class="l-common-contact">
