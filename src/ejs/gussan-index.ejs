@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
-  <body>
-    <%- include('./common/_p-header') %> <%- include('./project/_p-mv') %> <%-
-    include('./project/_p-top-content') %> <%- include('./project/_p-top-works')
-    %> <%- include('./project/_p-top-overview') %> <%-
-    include('./project/_p-top-blog')%> <%-
-    include('./project/_p-common-contact')%> <%- include('./common/_p-footer')
-    %>
-  </body>
+<%- include('./common/_head') %>
+
+<body>
+  <%- include('./common/_p-header',{Logo:'lowLogo'}) %>
+  <%- include('./project/_p-mv') %>
+  <%- include('./project/_p-top-content') %>
+  <%- include('./project/_p-top-works') %>
+  <%- include('./project/_p-top-overview') %>
+  <%- include('./project/_p-top-blog')%>
+  <%- include('./project/_p-common-contact')%>
+  <%- include('./common/_p-footer') %>
+</body>
+
 </html>

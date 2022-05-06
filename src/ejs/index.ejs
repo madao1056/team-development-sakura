@@ -2,28 +2,28 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-    <body>
-        <%- include('./common/_p-header') %>
-            <%- include('./project/_p-mv') %>
-                <div class="l-top-news">
-                    <%- include('./project/_p-top-news') %>
-                </div>
-                <div class="l-top-content">
-                    <%- include('./project/_p-top-content') %>
-                </div>
-                <div class="l-top-works">
-                    <%- include('./project/_p-top-works')%>
-                </div>
-                <div class="l-top-overview">
-                    <%- include('./project/_p-top-overview') %>
-                </div>
-                <div class="l-top-blog">
-                    <%- include('./project/_p-top-blog')%>
-                </div>
-                <div class="l-common-contact">
-                    <%- include('./project/_p-common-contact')%>
-                </div>
-                <%- include('./common/_p-footer')%>
-    </body>
+<body>
+    <%- include('./common/_p-header',{Logo:'topLogo'}) %>
+    <%- include('./project/_p-mv') %>
+    <div class="l-top-news">
+        <%- include('./project/_p-top-news') %>
+    </div>
+    <div class="l-top-content">
+        <%- include('./project/_p-top-content') %>
+    </div>
+    <div class="l-top-works">
+        <%- include('./project/_p-top-works')%>
+    </div>
+    <div class="l-top-overview">
+        <%- include('./project/_p-top-overview') %>
+    </div>
+    <div class="l-top-blog">
+        <%- include('./project/_p-top-blog')%>
+    </div>
+    <div class="l-common-contact">
+        <%- include('./project/_p-common-contact')%>
+    </div>
+    <%- include('./common/_p-footer')%>
+</body>
 
 </html>
