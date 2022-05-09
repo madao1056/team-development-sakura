@@ -14,6 +14,7 @@
 .p-sub-hero__title {
   font-size: rem(28);
   letter-spacing: 0.14em;
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(35);
   }
