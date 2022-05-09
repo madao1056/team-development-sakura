@@ -5,21 +5,23 @@
   { title: 'ふりがな', type: 'text', placeholder: 'テキストがはいります' },
   { title: 'メールアドレス', type: 'email', placeholder: 'テキストがはいります' },
 ];%>
-    <div class="p-form">
+<div class="p-form">
+    <div class="p-form__inner">
         <div class="p-form__errorText">
             <p>※必要事項を入力してください</p>
         </div>
         <%  array.forEach(function (value) { %>
-            <div class="p-form__item">
-                <p class="p-form__item--label">
-                    <%= value.title %>
-                </p>
-                <input type="<%= value.type %>" class="p-form__item--input" placeholder="<%= value.placeholder %>" />
-            </div>
-            <% }); %>
-                <div class="p-form__item">
-                    <p class="p-form__item--label isMsg">お問い合わせ内容</p>
-                    <textarea class="p-form__item--textarea" placeholder="テキストがはいります"></textarea>
-                </div>
-                <input type="submit" class="p-form__btn" value="送信">
+        <div class="p-form__item">
+            <p class="p-form__item--label">
+                <%= value.title %>
+            </p>
+            <input type="<%= value.type %>" class="p-form__item--input" placeholder="<%= value.placeholder %>" />
+        </div>
+        <% }); %>
+        <div class="p-form__item">
+            <p class="p-form__item--label isMsg">お問い合わせ内容</p>
+            <textarea class="p-form__item--textarea" placeholder="テキストがはいります"></textarea>
+        </div>
+        <input type="submit" class="p-form__btn" value="送信">
     </div>
+</div>
