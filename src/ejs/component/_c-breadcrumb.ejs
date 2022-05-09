@@ -1,24 +1,24 @@
 <%# 例）include('./component/_c-breadcrumb',{pageTitle:'制作実績', detailTitle:''}) %>
-    <div class="c-breadcrumb">
-        <ol class="c-breadcrumb__list">
-            <li class="c-breadcrumb__item">
-                <a itemprop="item" href="./" title="トップページ">
-                    <span>トップ</span>
-                </a>
-            </li>
-            <li class="c-breadcrumb__item">
-                <a href="#">
-                    <span><%= pageTitle %></span>
-                </a>
-            </li>
-
-            <% if (detailTitle) { %>
-                <li class="c-breadcrumb__item">
-                    <a href="#">
-                        <span><%= detailTitle %></span>
-                    </a>
-                </li>
-
-                <% } %>
-        </ol>
-    </div>
+<div class="c-breadcrumb">
+    <ol class="c-breadcrumb__list">
+        <li class="c-breadcrumb__item">
+            <a itemprop="item" href="./" title="トップページ">
+                <span>トップ</span>
+            </a>
+        </li>
+        <li class="c-breadcrumb__item">
+            <% if(detailTitle){ %>
+            <a href="<%= pageLink %>">
+                <span><%= pageTitle %></span>
+            </a>
+            <% }else { %>
+            <span><%= pageTitle %></span>
+            <% } %>
+        </li>
+        <% if (detailTitle) { %>
+        <li class="c-breadcrumb__item">
+            <span><%= detailTitle %></span>
+        </li>
+        <% } %>
+    </ol>
+</div>
