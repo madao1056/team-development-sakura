@@ -13,6 +13,7 @@
 }
 
 .p-sp-nav__items {
+	width: inherit;
 	display: block;
 	position: absolute;
 	top: 50%;
@@ -21,12 +22,15 @@
 	text-align: center;
 }
 
-.p-sp-nav__item {
-	margin-top: rem(32);
+.p-sp-nav__item{
+	width: inherit;
 }
 
-.p-sp-nav__item:first-child {
-	margin-top: 0;
+.p-sp-nav__item a{
+	display: block;
+	width: inherit;
+	padding-top: rem(16);
+	padding-bottom: rem(16);
 }
 
 /* メニューオープン時 */

@@ -1,4 +1,5 @@
-@use "global" as *;
+@use "global"as *;
+
 .c-page-top {
     width: rem(45);
     height: rem(45);
@@ -6,8 +7,9 @@
     bottom: rem(41);
     right: rem(21);
     z-index: 50;
-    background: #fff;
-    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    transition: background-color 0.3s;
+
     @include mq(md) {
         bottom: rem(27);
         right: rem(32);
@@ -22,11 +24,11 @@
     left: 50%;
     width: rem(17);
     height: rem(17);
-    border-top: rem(3) solid #333;
-    border-right: rem(3) solid #333;
+    border-top: rem(3) solid $text;
+    border-right: rem(3) solid $text;
     border-radius: rem(1.5);
     transform: translate(-50%, -50%) rotate(-45deg);
-    transition: 0.3s ease-in-out;
+
     @include mq(md) {
         top: 63%;
         left: 48%;
@@ -36,17 +38,14 @@
 }
 
 .c-page-top:hover::before {
-    border-top: rem(3) solid #fff;
-    border-right: rem(3) solid #fff;
-    transition: 0.3s ease-in-out;
+    @include mq(md) {
+        border-top: rem(3) solid $white;
+        border-right: rem(3) solid $white;
+    }
 }
 
 .c-page-top:hover {
-    background: #333;
-    transition: 0.3s ease-in-out;
-}
-
-.c-page-top.none {
-    display: none;
-    transition: display 0.3s;
+    @include mq(md) {
+        background-color: $text;
+    }
 }

@@ -14,7 +14,8 @@
   border: 1px solid $white;
   padding: rem(3) rem(7);
   margin: 0 rem(8);
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   text-align: center;
   text-decoration: none;
 }
