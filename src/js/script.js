@@ -26,15 +26,6 @@ jQuery(function ($) {
         return false;
     });
 
-    // ヘッダー
-    // $(window).on("scroll", function () {
-    //     if ($(".p-sub-hero p-mv").height() < $(this).scrollTop()) {
-    //         $(".p-header__inner").css("background-color","rgba(17,17,17,1)");
-    //     } else {
-    //         $(".p-header__inner").css("background-color","rgba(17,17,17,0.5)");
-    //     }
-    // });
-
     // スクロールするとヘッダーの背景色変更
     var elemTop = $(".p-mv,.p-sub-hero,.l-breadcrumb").outerHeight();
     $(window).on("scroll", function () {
@@ -51,21 +42,6 @@ jQuery(function ($) {
         $('.p-sp-nav').toggleClass('is-open');
         $("html").toggleClass("is-fixed");
     });
-
-    //ナビバートグル
-    // $(".js-hamburger").on("click", function() {
-    //     if ($(".js-hamburger").hasClass("is-open")) {
-    //         $(this).toggleClass("is-open");
-    //         $(".js-drawer-menu").fadeOut();
-    //         $(".js-overlay").fadeOut();
-    //         $("body").removeClass("noscroll");
-    //     } else {
-    //         $(this).toggleClass("is-open");
-    //         $(".js-drawer-menu").fadeIn();
-    //         $(".js-overlay").fadeIn();
-    //         $("body").toggleClass("noscroll");
-    //     }
-    // });
 
     // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
     $(document).on("click", 'a[href*="#"]', function () {

@@ -1,4 +1,5 @@
-@use "global" as *;
+@use "global"as *;
+
 .c-breadcrumb__list {
     max-width: 1160px;
     width: 100%;
@@ -6,6 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.015em;
+
     @include mq(md) {
         padding: 0 rem(30);
     }
@@ -17,6 +19,7 @@
     font-weight: $regular;
     text-transform: uppercase;
     line-height: rem(16);
+
     @include mq(md) {
         line-height: rem(45);
         letter-spacing: rem(0.7);
@@ -39,5 +42,7 @@
 }
 
 .c-breadcrumb__item a:hover {
-    text-decoration: underline;
+    @include mq(md) {
+        text-decoration: underline;
+    }
 }

@@ -1,4 +1,4 @@
-@use "global" as *;
+@use "global"as *;
 
 .c-news-post {
 	@include mq(md) {
@@ -25,10 +25,6 @@
 		display: flex;
 		align-items: baseline;
 	}
-}
-
-.c-news-post__link:hover {
-	opacity: 1;
 }
 
 .c-news-post__info {
@@ -74,12 +70,13 @@
 	@include mq(md) {
 		margin-top: 0;
 		margin-right: rem(48);
-		transition: all 0.3s ease 0s;
 	}
 }
 
 .c-news-post__text--top {
-	text-decoration: underline $black;
+	@include mq(md) {
+		text-decoration: underline $black;
+	}
 }
 
 .c-news-post__text--page {
@@ -89,9 +86,13 @@
 }
 
 .c-news-post__link:hover .c-news-post__text--top {
-	text-decoration: underline $white;
+	@include mq(md) {
+		text-decoration: underline $white;
+	}
 }
 
 .c-news-post__link:hover .c-news-post__text--page {
-	color: $underline-yellow;
+	@include mq(md) {
+		color: $underline-yellow;
+	}
 }

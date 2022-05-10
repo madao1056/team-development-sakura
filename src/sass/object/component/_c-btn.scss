@@ -1,22 +1,24 @@
-@use "global" as *;
+@use "global"as *;
+
 .c-btn {
     text-align: center;
     display: inline-block;
-    font-size: rem(20);
-    letter-spacing: rem(2);
+    width: 100%;
+    max-width: rem(335);
     padding: rem(9) 0;
     background-color: $text;
     border: 1px solid $white;
-    transition: 0.3s ease-in-out;
+    font-size: rem(20);
+    letter-spacing: rem(2);
     position: relative;
-    z-index: 10;
     overflow: hidden;
-    width: 100%;
-    max-width: rem(335);
+    z-index: 10;
+
     @include mq(md) {
         font-size: rem(16);
         padding: rem(17) 0;
         max-width: rem(360);
+        transition: transform 0.3s ease-in-out;
     }
 }
 
@@ -30,21 +32,26 @@
     z-index: -1;
     background-color: $white;
     transform: translateX(-100%);
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .c-btn:hover {
-    color: #333;
-    transition: 0.3s ease-in-out;
+    @include mq(md) {
+        color: #333;
+        transition: transform 0.3s ease-in-out;
+    }
 }
 
 .c-btn:hover::before {
-    transform: translateX(0);
-    transition: 0.3s ease-in-out;
+    @include mq(md) {
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
 }
 
 .c-btn--white {
     color: $white;
+
     @include mq(md) {
         color: #333;
         background-color: $white;

@@ -15,14 +15,16 @@
 	border: 1px solid $white;
 	line-height: 1;
 	padding: rem(3) rem(18.5);
-	transition: 0.2s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 	text-align: center;
 	white-space: nowrap;
 }
 
 .c-pagenavi-string a:hover {
-	color: $black;
-	background-color: $white;
+	@include mq(md) {
+		color: $black;
+		background-color: $white;
+	}
 }
 
 .c-pagenavi-string__prev a,

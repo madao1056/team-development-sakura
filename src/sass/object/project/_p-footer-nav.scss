@@ -17,7 +17,7 @@
 	}
 }
 
-.p-footer-nav__item::after {
+.p-footer-nav__item a::after {
 	@include mq(md) {
 		position: absolute;
 		bottom: 0;
@@ -28,11 +28,11 @@
 		background: $underline-yellow;
 		transform: scale(0, 1);
 		transform-origin: left top;
-		transition: transform 0.3s;
+		transition: transform 0.2s linear;
 	}
 }
 
-.p-footer-nav__item:hover:after {
+.p-footer-nav__item a:hover:after {
 	@include mq(md) {
 		transform: scale(1, 1);
 	}
