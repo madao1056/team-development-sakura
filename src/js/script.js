@@ -18,8 +18,8 @@ jQuery(function ($) {
     // ボタンをクリックしたらスクロールして上に戻る
     topBtn.click(function () {
         $("body,html").animate({
-                scrollTop: 0,
-            },
+            scrollTop: 0,
+        },
             300,
             "swing"
         );
@@ -55,4 +55,17 @@ jQuery(function ($) {
         }, time, "swing");
         return false;
     });
+
+    window.onload = () => {
+        // URLの取得
+        let url = location.href;
+        // if (url == "https://gussan-website-wp.blog/team-sakura/") {
+        if (url == "http://localhost:3000/") {
+            const newIcon = document.querySelectorAll('.p-cards__new');
+            newIcon.forEach(function (value) { 
+                value.style.display = "flex";
+            });
+        }
+    }
+
 });
