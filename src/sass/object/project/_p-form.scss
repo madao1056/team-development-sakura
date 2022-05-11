@@ -1,4 +1,4 @@
-@use 'global'as *;
+@use 'global' as *;
 
 .p-form {
     position: relative;
@@ -136,7 +136,7 @@
     letter-spacing: 0.05em;
     background: #fff;
     color: #333;
-    font-weight: 300;
+    font-weight: $normal;
     font-size: rem(20);
 
     @include mq(md) {

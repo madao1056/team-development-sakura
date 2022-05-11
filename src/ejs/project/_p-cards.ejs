@@ -5,6 +5,9 @@
     <% for (let i = 0; i < max; i++) { %>
 
     <article class="p-cards__item">
+        <% if(i == 0){ %>
+        <p class="p-cards__new">new</p>
+        <%}%>
         <%- include('../component/_c-card',{num:i,articleCard:'topCard'}) %>
     </article>
     <% } %>
